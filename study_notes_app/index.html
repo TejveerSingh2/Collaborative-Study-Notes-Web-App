@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Create Notes</a></li>
+                <li><a href="">View Notes</a></li>
+                <li><a href="">Settings</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+        <h1>Welcome to the Study Notes App</h1>
+        <p>Your one-stop solution for organizing and managing your study notes.</p>
+        </section>
+        <section>
+        <h2>Create Note</h2>
+        <form id="notform"><label>Title:</label><input type="text" id="title" required></form>
+        <label>Description</label>
+        <textarea id="description" required></textarea>
+        <label>Tags/Topics:</label><br>
+        <Select id="tags" multiple>
+            <option value="css">CSS</option>
+            <option value="HTML">HTML</option>
+            <option value="Firebase">Firebase</option>
+        </Select><br>
+        <label>Priority:</label>
+        <select id="priority">
+            <option value="high">High</option>
+            <option value="medium">Medium</option>
+            <option value="low">Low</option>
+        </select><br>
+            <label>Upload Image:</label>
+            <input type="file" id="image" accept="image/*"><br>
+            <button type="submit">Save Note</button>
+        </form> 
+        </section>
+        <section id="noteDisplay">
+            <h2>Saved Notes</h2>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Study Notes App. All rights reserved.</p>
+    </footer>
+    <button id="toggle-theme">Toggle Dark Mode</button>
+    <script src="./script.js"></script>
+    </body>
+</html>
